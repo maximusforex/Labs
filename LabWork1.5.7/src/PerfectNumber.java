@@ -6,10 +6,14 @@ public class PerfectNumber {
         String n1 = scan.nextLine();
         int n = Integer.parseInt(n1);
         System.out.println(n);
-        int evenNumber=n%2;
-        if(evenNumber==0){
-            System.out.println("Even number .Perhaps perfect");
+        int a = 0;
+
+        for (int j = n; j >= 1; j--) {
+            if ((!(j == n)&&(n % j == 0))) {
+                a += j;
+            }
+        }
+        System.out.println(a);
 
         }
     }
-}
