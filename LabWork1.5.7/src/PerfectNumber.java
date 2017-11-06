@@ -1,6 +1,6 @@
 import java.util.Scanner;
 public class PerfectNumber {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         System.out.print("Enter the number : ");
         Scanner scan = new Scanner(System.in);
         String n1 = scan.nextLine();
@@ -9,11 +9,14 @@ public class PerfectNumber {
         int a = 0;
 
         for (int j = n; j >= 1; j--) {
-            if ((!(j == n)&&(n % j == 0))) {
+            if ((!(j == n) && (n % j == 0))) {
                 a += j;
             }
         }
-        System.out.println(a);
-
+        if (a == n) {
+            System.out.println("Perfect number found " + a);
+        } else {
+            System.out.println("Not perfect number.");
         }
     }
+}
