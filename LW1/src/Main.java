@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[] args) {
+
         Math m1 = new Math();
         Math m2 = new Math();
         Math m3 = new Math();

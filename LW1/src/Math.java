@@ -19,7 +19,7 @@ public class Math {
     public static int findMin(int[] a){
         int minValue = a[0];
         for(int element : a){
-            if(minValue <= element){
+            if(element <= minValue){
                 minValue = element;
             }
         }
@@ -29,7 +29,7 @@ public class Math {
     public static int findMax(int[] a){
         int maxValue = a[0];
         for(int element : a){
-            if(maxValue >= element){
+            if(element >= maxValue){
                 maxValue = element;
             }
         }
