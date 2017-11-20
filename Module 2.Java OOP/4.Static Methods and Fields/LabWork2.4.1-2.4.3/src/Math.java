@@ -1,5 +1,7 @@
 public class Math {
 
+    final static double PI = 3.14;
+
     public static int findMin(int a, int b){
         if(a <= b){
             return a;
@@ -34,5 +36,9 @@ public class Math {
             }
         }
         return maxValue;
+    }
+
+    public static double areaOfCircle(double radius) {
+        return PI * radius * radius;
     }
 }
